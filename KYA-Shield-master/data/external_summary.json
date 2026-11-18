@@ -1,0 +1,45 @@
+{
+  "ieee_cis": {
+    "amount_quantiles": {
+      "p50": 68.78,
+      "p90": 275.293,
+      "p99": 1104.0
+    },
+    "fraud_rate": 0.03499000914417313,
+    "fraud_rows": 20663,
+    "identity_device_types": {
+      "desktop": 85165,
+      "missing": 3423,
+      "mobile": 55645
+    },
+    "mean_amount": 135.02717637247264,
+    "product_codes": {
+      "C": 68519,
+      "H": 33024,
+      "R": 37699,
+      "S": 11628,
+      "W": 439670
+    },
+    "rows": 590540
+  },
+  "paysim": {
+    "amount_quantiles": {
+      "p50": 74872.08,
+      "p90": 365423.48,
+      "p99": 1615983.34
+    },
+    "fraud_rate": 0.001290820448180152,
+    "fraud_rows": 8213,
+    "mean_amount": 179861.90354913071,
+    "rows": 6362620,
+    "transaction_types": {
+      "CASH_IN": 1399284,
+      "CASH_OUT": 2237500,
+      "DEBIT": 41432,
+      "PAYMENT": 2151495,
+      "TRANSFER": 532909
+    }
+  },
+  "source_directory": "dataset",
+  "usage": "Distribution enrichment only. These datasets do not provide KYA agent-session labels and are not mixed into the held-out session test set."
+}

@@ -1,0 +1,14 @@
+services:
+  kya-api:
+    build: .
+    ports:
+      - "8000:8000"
+    environment:
+      KYA_API_KEY: ${KYA_API_KEY:-}
+      KYA_SHADOW_MODE: ${KYA_SHADOW_MODE:-true}
+      KYA_AUDIT_LOG: /app/audit/events.jsonl
+    volumes:
+      - kya-audit:/app/audit
+
+volumes:
+  kya-audit:

@@ -1,0 +1,25 @@
+{
+  "mandate_id": "m-demo-0001",
+  "principal_id": "cust-001",
+  "agent_id": "agent-demo-01",
+  "agent_provenance": {
+    "framework": "demo-browser-agent",
+    "registered_at": "2026-11-06T20:20:00+00:00"
+  },
+  "task_description": "Weekly groceries under INR 3,000",
+  "allowed_merchant_categories": [
+    "grocery"
+  ],
+  "allowed_payees": [
+    "FRESHMART",
+    "DAILYBASKET"
+  ],
+  "max_amount_per_txn": 3000.0,
+  "max_total_amount": 3000.0,
+  "max_txns_per_day": 3,
+  "issued_at": "2026-11-06T20:20:00+00:00",
+  "expires_at": "2026-11-13T20:20:00+00:00",
+  "nonce": "nonce-demo-0001",
+  "key_id": "principal:cust-001",
+  "signature": "UlDTU2DXpQJlvcssp0ZTeVfYy3NRxGSTx+HxG2fZ7eqha68o879s8iEsex42anM2cv+dg9acwS/4DUovewm3AA=="
+}

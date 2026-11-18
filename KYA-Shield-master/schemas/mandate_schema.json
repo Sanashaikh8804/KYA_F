@@ -1,0 +1,33 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "kya-shield/mandate_schema.json",
+  "title": "KYA-Shield signed mandate",
+  "type": "object",
+  "properties": {
+    "mandate_id": { "type": "string" },
+    "principal_id": { "type": "string" },
+    "agent_id": { "type": "string" },
+    "agent_provenance": {
+      "type": "object",
+      "properties": {
+        "framework": { "type": "string" },
+        "registered_at": { "type": "string", "format": "date-time" }
+      }
+    },
+    "task_description": { "type": "string" },
+    "allowed_merchant_categories": { "type": "array", "items": { "type": "string" }, "minItems": 1 },
+    "allowed_payees": { "type": "array", "items": { "type": "string" } },
+    "max_amount_per_txn": { "type": "number", "minimum": 0 },
+    "max_total_amount": { "type": "number", "minimum": 0 },
+    "max_txns_per_day": { "type": "integer", "minimum": 1 },
+    "issued_at": { "type": "string", "format": "date-time" },
+    "expires_at": { "type": "string", "format": "date-time" },
+    "nonce": { "type": "string" },
+    "signature": { "type": "string", "description": "Base64 Ed25519 signature over the canonical JSON (sorted keys, no whitespace, UTF-8) of every other field" }
+  },
+  "required": [
+    "mandate_id", "principal_id", "agent_id", "allowed_merchant_categories",
+    "max_amount_per_txn", "max_total_amount", "max_txns_per_day",
+    "issued_at", "expires_at", "nonce", "signature"
+  ]
+}

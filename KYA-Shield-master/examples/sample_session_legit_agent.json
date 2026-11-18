@@ -1,0 +1,155 @@
+[
+  {
+    "session_id": "s-agent-legit-001",
+    "ts_ms": 1794000010000,
+    "device": {
+      "user_agent": "HeadlessChrome/126.0",
+      "platform": "Win32",
+      "screen_w": 1920,
+      "screen_h": 1080,
+      "webdriver": true,
+      "headless_hint": true,
+      "ip_hash": "demo-salted-hash"
+    },
+    "client": {
+      "client_type": "browser",
+      "framework_hint": "demo-browser-agent",
+      "agent_id": "agent-demo-01"
+    },
+    "event_type": "api_call",
+    "api_endpoint": "/auth/token",
+    "http_method": "POST"
+  },
+  {
+    "session_id": "s-agent-legit-001",
+    "ts_ms": 1794000010900,
+    "device": {
+      "user_agent": "HeadlessChrome/126.0",
+      "platform": "Win32",
+      "screen_w": 1920,
+      "screen_h": 1080,
+      "webdriver": true,
+      "headless_hint": true,
+      "ip_hash": "demo-salted-hash"
+    },
+    "client": {
+      "client_type": "browser",
+      "framework_hint": "demo-browser-agent",
+      "agent_id": "agent-demo-01"
+    },
+    "event_type": "page_view",
+    "page": "catalog",
+    "dwell_ms": 300
+  },
+  {
+    "session_id": "s-agent-legit-001",
+    "ts_ms": 1794000013300,
+    "device": {
+      "user_agent": "HeadlessChrome/126.0",
+      "platform": "Win32",
+      "screen_w": 1920,
+      "screen_h": 1080,
+      "webdriver": true,
+      "headless_hint": true,
+      "ip_hash": "demo-salted-hash"
+    },
+    "client": {
+      "client_type": "browser",
+      "framework_hint": "demo-browser-agent",
+      "agent_id": "agent-demo-01"
+    },
+    "event_type": "page_view",
+    "page": "product_page",
+    "content_origin": "external",
+    "dwell_ms": 2400
+  },
+  {
+    "session_id": "s-agent-legit-001",
+    "ts_ms": 1794000016400,
+    "device": {
+      "user_agent": "HeadlessChrome/126.0",
+      "platform": "Win32",
+      "screen_w": 1920,
+      "screen_h": 1080,
+      "webdriver": true,
+      "headless_hint": true,
+      "ip_hash": "demo-salted-hash"
+    },
+    "client": {
+      "client_type": "browser",
+      "framework_hint": "demo-browser-agent",
+      "agent_id": "agent-demo-01"
+    },
+    "event_type": "api_call",
+    "api_endpoint": "/cart/add",
+    "http_method": "POST"
+  },
+  {
+    "session_id": "s-agent-legit-001",
+    "ts_ms": 1794000018200,
+    "device": {
+      "user_agent": "HeadlessChrome/126.0",
+      "platform": "Win32",
+      "screen_w": 1920,
+      "screen_h": 1080,
+      "webdriver": true,
+      "headless_hint": true,
+      "ip_hash": "demo-salted-hash"
+    },
+    "client": {
+      "client_type": "browser",
+      "framework_hint": "demo-browser-agent",
+      "agent_id": "agent-demo-01"
+    },
+    "event_type": "form_submit",
+    "target": "merchant_payment"
+  },
+  {
+    "session_id": "s-agent-legit-001",
+    "ts_ms": 1794000018700,
+    "device": {
+      "user_agent": "HeadlessChrome/126.0",
+      "platform": "Win32",
+      "screen_w": 1920,
+      "screen_h": 1080,
+      "webdriver": true,
+      "headless_hint": true,
+      "ip_hash": "demo-salted-hash"
+    },
+    "client": {
+      "client_type": "browser",
+      "framework_hint": "demo-browser-agent",
+      "agent_id": "agent-demo-01"
+    },
+    "event_type": "transaction",
+    "amount": 2450.0,
+    "payee": "FRESHMART",
+    "new_payee": false,
+    "merchant_category": "grocery",
+    "mandate": {
+      "mandate_id": "m-demo-0001",
+      "principal_id": "cust-001",
+      "agent_id": "agent-demo-01",
+      "agent_provenance": {
+        "framework": "demo-browser-agent",
+        "registered_at": "2026-11-06T20:20:00+00:00"
+      },
+      "task_description": "Weekly groceries under INR 3,000",
+      "allowed_merchant_categories": [
+        "grocery"
+      ],
+      "allowed_payees": [
+        "FRESHMART",
+        "DAILYBASKET"
+      ],
+      "max_amount_per_txn": 3000.0,
+      "max_total_amount": 3000.0,
+      "max_txns_per_day": 3,
+      "issued_at": "2026-11-06T20:20:00+00:00",
+      "expires_at": "2026-11-13T20:20:00+00:00",
+      "nonce": "nonce-demo-0001",
+      "key_id": "principal:cust-001",
+      "signature": "UlDTU2DXpQJlvcssp0ZTeVfYy3NRxGSTx+HxG2fZ7eqha68o879s8iEsex42anM2cv+dg9acwS/4DUovewm3AA=="
+    }
+  }
+]

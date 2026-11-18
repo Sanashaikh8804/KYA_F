@@ -1,0 +1,37 @@
+{
+  "_illustrative": true,
+  "session_id": "s-agent-hijack-001",
+  "agent_class": "llm_agent",
+  "agent_class_probs": {
+    "human": 0.02,
+    "scripted_bot": 0.07,
+    "llm_agent": 0.91
+  },
+  "agent_trust_score": 8,
+  "p_fraud": 0.92,
+  "action": "block",
+  "expected_cost_by_action": {
+    "allow": 2750.8,
+    "step_up": 826.84,
+    "hold": 287.08,
+    "block": 40.0
+  },
+  "reason_codes": [
+    {
+      "code": "R101",
+      "text": "Payee 'ACME-9921' is not in the mandate's allowed payees.",
+      "weight": 0.52
+    },
+    {
+      "code": "R201",
+      "text": "A new payee was added 4.2 s after external page content was loaded.",
+      "weight": 0.31
+    },
+    {
+      "code": "R300",
+      "text": "Amount is at 99.7% of the mandate cap and unusual for this customer.",
+      "weight": 0.11
+    }
+  ],
+  "latency_ms": 41.7
+}

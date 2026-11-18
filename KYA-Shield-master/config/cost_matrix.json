@@ -1,0 +1,17 @@
+{
+  "_source": "Perfios x IIT Bombay Techfest Hackathon 2026, Problem 2 default matrix. Teams may substitute justified values; document any change in docs/ASSUMPTIONS.md.",
+  "currency": "INR",
+  "actions": ["allow", "step_up", "hold", "block"],
+  "legitimate_cost": {
+    "allow": 0,
+    "step_up": 20,
+    "hold": 150,
+    "block": 500
+  },
+  "fraud_loss_fraction_of_amount": {
+    "allow": 1.0,
+    "step_up": 0.3,
+    "hold": 0.1,
+    "block": 0.0
+  }
+}

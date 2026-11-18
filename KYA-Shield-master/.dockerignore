@@ -1,0 +1,8 @@
+dataset/
+data/sessions.jsonl
+data/labels.csv
+demo/node_modules/
+demo/.next/
+__pycache__/
+*.pyc
+audit/

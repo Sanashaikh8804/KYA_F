@@ -1,0 +1,1 @@
+"""KYA-Shield scoring components."""

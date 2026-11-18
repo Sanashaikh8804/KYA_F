@@ -1,0 +1,81 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "kya-shield/event_schema.json",
+  "title": "KYA-Shield session input: time-ordered list of events for ONE session",
+  "type": "array",
+  "minItems": 1,
+  "items": { "$ref": "#/$defs/event" },
+  "$defs": {
+    "device": {
+      "type": "object",
+      "properties": {
+        "user_agent": { "type": "string" },
+        "platform": { "type": "string" },
+        "screen_w": { "type": "integer" },
+        "screen_h": { "type": "integer" },
+        "webdriver": { "type": "boolean", "description": "navigator.webdriver or equivalent automation flag" },
+        "headless_hint": { "type": "boolean" },
+        "ip_hash": { "type": "string", "description": "Salted hash, never a raw IP" }
+      },
+      "required": ["user_agent"]
+    },
+    "client": {
+      "type": "object",
+      "properties": {
+        "client_type": { "type": "string", "enum": ["browser", "agent", "api", "mobile_app", "unknown"] },
+        "framework_hint": { "type": "string", "description": "Optional self-declared agent/framework name; never trusted" },
+        "agent_id": { "type": "string", "description": "Agent identifier presented with the session, if any" }
+      },
+      "required": ["client_type"]
+    },
+    "mandate": {
+      "type": "object",
+      "description": "Signed mandate; full definition in mandate_schema.json",
+      "properties": {
+        "mandate_id": { "type": "string" },
+        "principal_id": { "type": "string" },
+        "agent_id": { "type": "string" },
+        "signature": { "type": "string" }
+      },
+      "required": ["mandate_id", "principal_id", "agent_id", "signature"],
+      "additionalProperties": true
+    },
+    "event": {
+      "type": "object",
+      "properties": {
+        "session_id": { "type": "string" },
+        "ts_ms": { "type": "integer", "description": "Unix epoch milliseconds" },
+        "event_type": {
+          "type": "string",
+          "enum": ["page_view", "click", "keystroke", "form_submit", "api_call", "transaction"]
+        },
+        "device": { "$ref": "#/$defs/device" },
+        "client": { "$ref": "#/$defs/client" },
+
+        "page": { "type": "string", "description": "[added] Page/route name for page_view and click" },
+        "target": { "type": "string", "description": "[added] Element id/name for click, keystroke, form_submit" },
+        "x": { "type": "integer", "description": "[added] Pointer x for click (absent for scripted API sessions)" },
+        "y": { "type": "integer", "description": "[added] Pointer y for click" },
+        "dwell_ms": { "type": "integer", "description": "[added] Time on page before this event" },
+        "key_interval_ms": { "type": "integer", "description": "[added] Time since previous keystroke; the key value itself is NEVER recorded" },
+        "content_origin": { "type": "string", "enum": ["first_party", "external"], "description": "[added] 'external' if the page content loaded in this event came from outside the bank/merchant app (injection surface)" },
+        "referrer": { "type": "string", "description": "[added]" },
+        "api_endpoint": { "type": "string", "description": "[added] For api_call events" },
+        "http_method": { "type": "string", "description": "[added] For api_call events" },
+
+        "amount": { "type": "number", "minimum": 0, "description": "Transactions only (INR)" },
+        "payee": { "type": "string", "description": "Transactions only" },
+        "new_payee": { "type": "boolean", "description": "Transactions only: payee first seen for this principal" },
+        "merchant_category": { "type": "string", "description": "Transactions only" },
+        "mandate": { "$ref": "#/$defs/mandate" }
+      },
+      "required": ["session_id", "ts_ms", "event_type", "device", "client"],
+      "allOf": [
+        {
+          "if": { "properties": { "event_type": { "const": "transaction" } } },
+          "then": { "required": ["amount", "payee", "new_payee", "merchant_category"] }
+        }
+      ]
+    }
+  }
+}

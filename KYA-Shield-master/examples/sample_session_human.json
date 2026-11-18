@@ -1,0 +1,271 @@
+[
+  {
+    "session_id": "s-human-001",
+    "ts_ms": 1794000000000,
+    "device": {
+      "user_agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) Chrome/126.0",
+      "platform": "Win32",
+      "screen_w": 1920,
+      "screen_h": 1080,
+      "webdriver": false,
+      "headless_hint": false,
+      "ip_hash": "demo-salted-hash"
+    },
+    "client": {
+      "client_type": "browser"
+    },
+    "event_type": "page_view",
+    "page": "login",
+    "dwell_ms": 0
+  },
+  {
+    "session_id": "s-human-001",
+    "ts_ms": 1794000000255,
+    "device": {
+      "user_agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) Chrome/126.0",
+      "platform": "Win32",
+      "screen_w": 1920,
+      "screen_h": 1080,
+      "webdriver": false,
+      "headless_hint": false,
+      "ip_hash": "demo-salted-hash"
+    },
+    "client": {
+      "client_type": "browser"
+    },
+    "event_type": "keystroke",
+    "target": "username",
+    "key_interval_ms": 157
+  },
+  {
+    "session_id": "s-human-001",
+    "ts_ms": 1794000000547,
+    "device": {
+      "user_agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) Chrome/126.0",
+      "platform": "Win32",
+      "screen_w": 1920,
+      "screen_h": 1080,
+      "webdriver": false,
+      "headless_hint": false,
+      "ip_hash": "demo-salted-hash"
+    },
+    "client": {
+      "client_type": "browser"
+    },
+    "event_type": "keystroke",
+    "target": "username",
+    "key_interval_ms": 104
+  },
+  {
+    "session_id": "s-human-001",
+    "ts_ms": 1794000000674,
+    "device": {
+      "user_agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) Chrome/126.0",
+      "platform": "Win32",
+      "screen_w": 1920,
+      "screen_h": 1080,
+      "webdriver": false,
+      "headless_hint": false,
+      "ip_hash": "demo-salted-hash"
+    },
+    "client": {
+      "client_type": "browser"
+    },
+    "event_type": "keystroke",
+    "target": "username",
+    "key_interval_ms": 354
+  },
+  {
+    "session_id": "s-human-001",
+    "ts_ms": 1794000000812,
+    "device": {
+      "user_agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) Chrome/126.0",
+      "platform": "Win32",
+      "screen_w": 1920,
+      "screen_h": 1080,
+      "webdriver": false,
+      "headless_hint": false,
+      "ip_hash": "demo-salted-hash"
+    },
+    "client": {
+      "client_type": "browser"
+    },
+    "event_type": "keystroke",
+    "target": "username",
+    "key_interval_ms": 267
+  },
+  {
+    "session_id": "s-human-001",
+    "ts_ms": 1794000001200,
+    "device": {
+      "user_agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) Chrome/126.0",
+      "platform": "Win32",
+      "screen_w": 1920,
+      "screen_h": 1080,
+      "webdriver": false,
+      "headless_hint": false,
+      "ip_hash": "demo-salted-hash"
+    },
+    "client": {
+      "client_type": "browser"
+    },
+    "event_type": "keystroke",
+    "target": "username",
+    "key_interval_ms": 109
+  },
+  {
+    "session_id": "s-human-001",
+    "ts_ms": 1794000001549,
+    "device": {
+      "user_agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) Chrome/126.0",
+      "platform": "Win32",
+      "screen_w": 1920,
+      "screen_h": 1080,
+      "webdriver": false,
+      "headless_hint": false,
+      "ip_hash": "demo-salted-hash"
+    },
+    "client": {
+      "client_type": "browser"
+    },
+    "event_type": "keystroke",
+    "target": "username",
+    "key_interval_ms": 189
+  },
+  {
+    "session_id": "s-human-001",
+    "ts_ms": 1794000001658,
+    "device": {
+      "user_agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) Chrome/126.0",
+      "platform": "Win32",
+      "screen_w": 1920,
+      "screen_h": 1080,
+      "webdriver": false,
+      "headless_hint": false,
+      "ip_hash": "demo-salted-hash"
+    },
+    "client": {
+      "client_type": "browser"
+    },
+    "event_type": "keystroke",
+    "target": "username",
+    "key_interval_ms": 124
+  },
+  {
+    "session_id": "s-human-001",
+    "ts_ms": 1794000001970,
+    "device": {
+      "user_agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) Chrome/126.0",
+      "platform": "Win32",
+      "screen_w": 1920,
+      "screen_h": 1080,
+      "webdriver": false,
+      "headless_hint": false,
+      "ip_hash": "demo-salted-hash"
+    },
+    "client": {
+      "client_type": "browser"
+    },
+    "event_type": "keystroke",
+    "target": "username",
+    "key_interval_ms": 294
+  },
+  {
+    "session_id": "s-human-001",
+    "ts_ms": 1794000002713,
+    "device": {
+      "user_agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) Chrome/126.0",
+      "platform": "Win32",
+      "screen_w": 1920,
+      "screen_h": 1080,
+      "webdriver": false,
+      "headless_hint": false,
+      "ip_hash": "demo-salted-hash"
+    },
+    "client": {
+      "client_type": "browser"
+    },
+    "event_type": "click",
+    "target": "login_btn",
+    "x": 842,
+    "y": 511
+  },
+  {
+    "session_id": "s-human-001",
+    "ts_ms": 1794000004105,
+    "device": {
+      "user_agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) Chrome/126.0",
+      "platform": "Win32",
+      "screen_w": 1920,
+      "screen_h": 1080,
+      "webdriver": false,
+      "headless_hint": false,
+      "ip_hash": "demo-salted-hash"
+    },
+    "client": {
+      "client_type": "browser"
+    },
+    "event_type": "page_view",
+    "page": "balance",
+    "dwell_ms": 1871
+  },
+  {
+    "session_id": "s-human-001",
+    "ts_ms": 1794000008862,
+    "device": {
+      "user_agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) Chrome/126.0",
+      "platform": "Win32",
+      "screen_w": 1920,
+      "screen_h": 1080,
+      "webdriver": false,
+      "headless_hint": false,
+      "ip_hash": "demo-salted-hash"
+    },
+    "client": {
+      "client_type": "browser"
+    },
+    "event_type": "click",
+    "target": "pay_merchant",
+    "x": 610,
+    "y": 388
+  },
+  {
+    "session_id": "s-human-001",
+    "ts_ms": 1794000010931,
+    "device": {
+      "user_agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) Chrome/126.0",
+      "platform": "Win32",
+      "screen_w": 1920,
+      "screen_h": 1080,
+      "webdriver": false,
+      "headless_hint": false,
+      "ip_hash": "demo-salted-hash"
+    },
+    "client": {
+      "client_type": "browser"
+    },
+    "event_type": "form_submit",
+    "target": "merchant_payment"
+  },
+  {
+    "session_id": "s-human-001",
+    "ts_ms": 1794000011291,
+    "device": {
+      "user_agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) Chrome/126.0",
+      "platform": "Win32",
+      "screen_w": 1920,
+      "screen_h": 1080,
+      "webdriver": false,
+      "headless_hint": false,
+      "ip_hash": "demo-salted-hash"
+    },
+    "client": {
+      "client_type": "browser"
+    },
+    "event_type": "transaction",
+    "amount": 1180.0,
+    "payee": "FRESHMART",
+    "new_payee": false,
+    "merchant_category": "grocery"
+  }
+]
